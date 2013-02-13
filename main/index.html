@@ -102,7 +102,7 @@
                                    <link rel="shortcut icon" href="ico/favicon.png">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <div class="container">
 
@@ -111,12 +111,10 @@
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Slub">Ślub</a></li>
+                <li><a href="#Wesele">Wesele</a></li>
+                <li><a href="#Prezenty">Prezenty</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
               </ul>
             </div>
           </div>
@@ -124,38 +122,27 @@
       </div>
 
       <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
+      <div class="jumbotron" id="Slub">
+        <h1>Slub</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="#">Get started today</a>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       </div>
-
-      <hr>
-
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
+      <div class="jumbotron" >
+        <h1 id="Wesele">Wesele!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       </div>
-
-      <hr>
-
-      <div class="footer">
-        <p>&copy; Company 2013</p>
+      <div class="jumbotron" id="Prezenty">
+        <h1>Slub</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
       </div>
+      <div class="jumbotron" id="Kontakt">
+        <h1>Kontakt</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      </div>
+      
 
     </div> <!-- /container -->
 
@@ -164,6 +151,30 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" >
+    $(document).ready(function() {
+
+    // Click event for any anchor tag that's href starts with #
+    $('.navbar a[href^="#"]').click(function(event) {
+
+        // The id of the section we want to go to.
+        var id = $(this).attr("href");
+
+        // An offset to push the content down from the top.
+        var offset = 60;
+
+        // Our scroll target : the top position of the
+        // section that has the id referenced by our href.
+        var target = $(id).offset().top - offset;
+
+        // The magic...smooth scrollin' goodness.
+        $('html, body').animate({scrollTop:target}, 500);
+
+        //prevent the page from jumping down to our section.
+        event.preventDefault();
+    });
+});
+    </script>
 
   </body>
 </html>
