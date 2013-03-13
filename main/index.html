@@ -42,8 +42,6 @@
         /* Main marketing message and sign up button */
         .jumbotron
         {
-            margin: 80px 0;
-            padding: 30px;
             text-align: center;
             background: url('img/jumbotron-bg.png');
             font-size: 120%;
@@ -53,7 +51,6 @@
             font-size: 75px;
             line-height: 1;
             margin-bottom: 40px;
-			background: url('img/corner_element.png') no-repeat;
         }
         .jumbotron .lead
         {
@@ -148,10 +145,20 @@
         {
             width: 90%;
         }
-		
-		.people {
-			margin-top: 10px;
-		}
+        
+        .people
+        {
+            margin-top: 10px;
+        }
+        
+        .jumbotronContent
+        {
+            width: 100%;
+            height: 100%;
+            margin: 80px 0;
+            padding: 30px;
+            background: url('img/jumbotron-corner.png') no-repeat 10px 10px;
+        }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -184,102 +191,108 @@
         </div>
         <!-- Jumbotron -->
         <div class="jumbotron" id="Slub">
-            <h1>
-                Ślub</h1>
-            <p>
-                Zapraszamy na nasz ślub!</p>
-            <p>
-                Czas: 18 maja 2013 godz. 17.00</p>
-            <p>
-                Miejsce:
-                <br />
-                <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0" src="http://maps.google.pl/maps?q=52.24418,21.103068&amp;num=1&amp;t=h&amp;ie=UTF8&amp;ll=52.243989,21.103277&amp;spn=0.015766,0.025749&amp;z=14&amp;output=embed">
-                </iframe>
-                <br />
-                <small><a href="http://maps.google.pl/maps?q=52.24418,21.103068&amp;num=1&amp;t=h&amp;ie=UTF8&amp;ll=52.243989,21.103277&amp;spn=0.015766,0.025749&amp;z=14&amp;source=embed"
-                    style="color: #0000FF;">Wyświetl większą mapę</a></small><br />
-            </p>
-            <p>
-                Rzymskokatolicka Parafia p.w. Najczystszego Serca Maryi
-                <br />
-                ul. Chłopickiego 2<br />
-                04-314 Warszawa<br />
-            </p>
+            <div class="jumbotronContent">
+                <h1>
+                    Ślub</h1>
+                <p>
+                    Zapraszamy na nasz ślub!</p>
+                <p>
+                    Czas: 18 maja 2013 godz. 17.00</p>
+                <p>
+                    Miejsce:
+                    <br />
+                    <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0" src="http://maps.google.pl/maps?q=52.24418,21.103068&amp;num=1&amp;t=h&amp;ie=UTF8&amp;ll=52.243989,21.103277&amp;spn=0.015766,0.025749&amp;z=14&amp;output=embed">
+                    </iframe>
+                    <br />
+                    <small><a href="http://maps.google.pl/maps?q=52.24418,21.103068&amp;num=1&amp;t=h&amp;ie=UTF8&amp;ll=52.243989,21.103277&amp;spn=0.015766,0.025749&amp;z=14&amp;source=embed"
+                        style="color: #0000FF;">Wyświetl większą mapę</a></small><br />
+                </p>
+                <p>
+                    Rzymskokatolicka Parafia p.w. Najczystszego Serca Maryi
+                    <br />
+                    ul. Chłopickiego 2<br />
+                    04-314 Warszawa<br />
+                </p>
+            </div>
         </div>
         <div class="jumbotron" id="Wesele">
-            <h1>
-                Wesele!</h1>
-            <p>
-                Po uroczystości ślubnej zapraszamy najbliższą rodzinę i przyjaciół na przyjęcie
-                weselne, które odbędzie się w restauracji Róża Wiatrów przy ul. Wał Miedzeszyński
-                377.
-            </p>
-            <div>
+            <div class="jumbotronContent">
+                <h1>
+                    Wesele!</h1>
+                <p>
+                    Po uroczystości ślubnej zapraszamy najbliższą rodzinę i przyjaciół na przyjęcie
+                    weselne, które odbędzie się w restauracji Róża Wiatrów przy ul. Wał Miedzeszyński
+                    377.
+                </p>
+                <div>
+                    <ul>
+                        <li class="horizontalBlock3"><a href="http://www.rozawiatrow-restauracja.pl/" target="_blank">
+                            <img src="img/content/restauracja.png" style="height: 200px;" /><br />
+                            Restauracja</a> </li>
+                        <li class="horizontalBlock3">
+                            <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0"
+                                marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;aq=&amp;sll=52.226906,21.086197&amp;sspn=0.032333,0.07184&amp;t=h&amp;ie=UTF8&amp;hq=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;hnear=&amp;ll=52.223593,21.066971&amp;spn=0.021031,0.051498&amp;z=13&amp;iwloc=A&amp;output=embed">
+                            </iframe>
+                            <br />
+                            <small><a href="https://maps.google.pl/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;aq=&amp;sll=52.226906,21.086197&amp;sspn=0.032333,0.07184&amp;t=h&amp;ie=UTF8&amp;hq=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;hnear=&amp;ll=52.223593,21.066971&amp;spn=0.021031,0.051498&amp;z=13&amp;iwloc=A"
+                                style="color: #0000FF; text-align: left">Miejsce</a></small> </li>
+                        <li class="horizontalBlock3" style="float: left;"><a href="img/content/parking_full.jpg"
+                            target="_blank">
+                            <img src="img/content/parking.jpg" style="height: 200px;" /><br />
+                            Parking</a> </li>
+                    </ul>
+                    <div style="clear: both">
+                    </div>
+                </div>
+                <p>
+                    Drodzy Goście, jeśli potrzebujecie transportu z kościoła do restauracji prosimy
+                    o informację – coś dla Was zorganizujemy.
+                </p>
+            </div>
+        </div>
+        <div class="jumbotron" id="Prezenty">
+            <div class="jumbotronContent">
+                <h1>
+                    Prezenty</h1>
+                <p>
+                    Ważniejsze niż prezenty jest dla nas, żebyście spędzili ten dzień z nami.</p>
+                <p>
+                    Jeśli jednak chcecie nam coś podarować to pamiętajcie,<br />
+                    że kwiaty (w przeciwieństwie do wina:) nie przetrwają do naszego powrotu z podróży
+                    poślubnej,<br />
+                    a od nowego kompletu kieliszków znacznie bardziej przydadzą nam się fundusze na
+                    bilety lotnicze.</p>
+            </div>
+            <div class="jumbotron" id="Kontakt">
+                <h1>
+                    Kontakt</h1>
                 <ul>
-                    <li class="horizontalBlock3"><a href="http://www.rozawiatrow-restauracja.pl/" target="_blank">
-                        <img src="img/content/restauracja.png" style="height: 200px;" /><br />
-                        Restauracja</a> </li>
-                    <li class="horizontalBlock3">
-                        <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0"
-                            marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;aq=&amp;sll=52.226906,21.086197&amp;sspn=0.032333,0.07184&amp;t=h&amp;ie=UTF8&amp;hq=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;hnear=&amp;ll=52.223593,21.066971&amp;spn=0.021031,0.051498&amp;z=13&amp;iwloc=A&amp;output=embed">
-                        </iframe>
-                        <br />
-                        <small><a href="https://maps.google.pl/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;aq=&amp;sll=52.226906,21.086197&amp;sspn=0.032333,0.07184&amp;t=h&amp;ie=UTF8&amp;hq=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;hnear=&amp;ll=52.223593,21.066971&amp;spn=0.021031,0.051498&amp;z=13&amp;iwloc=A"
-                            style="color: #0000FF; text-align: left">Miejsce</a></small> </li>
-                    <li class="horizontalBlock3" style="float: left;"><a href="img/content/parking_full.jpg"
-                        target="_blank">
-                        <img src="img/content/parking.jpg" style="height: 200px;" /><br />
-                        Parking</a> </li>
+                    <li class="horizontalBlock2">
+                        <img src="img/content/kingailona.jpg" class="doublePhoto" /><br />
+                        <ul class="people">
+                            <li class="horizontalBlock2">Świadkowa: Kinga Kołodziejczak
+                                <br />
+                                +48501653690 </li>
+                            <li class="horizontalBlock2">Ilona
+                                <br />
+                                +48607560999</li>
+                        </ul>
+                    </li>
+                    <li class="horizontalBlock2">
+                        <img src="img/content/jacekrafal.jpg" class="doublePhoto" /><br />
+                        <ul class="people">
+                            <li class="horizontalBlock2">Świadek: Jacek Kamiński<br />
+                                +48600302730</li>
+                            <li class="horizontalBlock2">Rafał<br />
+                                +17788557232 (Kanada)<br />
+                                +48605623289 (Polska)</li>
+                        </ul>
+                    </li>
                 </ul>
                 <div style="clear: both">
                 </div>
             </div>
-            <p>
-                Drodzy Goście, jeśli potrzebujecie transportu z kościoła do restauracji prosimy
-                o informację – coś dla Was zorganizujemy.
-            </p>
-        </div>
-        <div class="jumbotron" id="Prezenty">
-            <h1>
-                Prezenty</h1>
-            <p>
-                Ważniejsze niż prezenty jest dla nas, żebyście spędzili ten dzień z nami.</p>
-            <p>
-                Jeśli jednak chcecie nam coś podarować to pamiętajcie,<br />
-                że kwiaty (w przeciwieństwie do wina:) nie przetrwają do naszego powrotu z podróży
-                poślubnej,<br />
-                a od nowego kompletu kieliszków znacznie bardziej przydadzą nam się fundusze na
-                bilety lotnicze.</p>
-        </div>
-        <div class="jumbotron" id="Kontakt">
-            <h1>
-                Kontakt</h1>
-            <ul>
-                <li class="horizontalBlock2">
-                    <img src="img/content/kingailona.jpg" class="doublePhoto" /><br />
-                    <ul class="people">
-                        <li class="horizontalBlock2">Świadkowa: Kinga Kołodziejczak
-                            <br />
-                            +48501653690 </li>
-                        <li class="horizontalBlock2">Ilona
-                            <br />
-                            +48607560999</li>
-                    </ul>
-                </li>
-                <li class="horizontalBlock2">
-                    <img src="img/content/jacekrafal.jpg" class="doublePhoto" /><br />
-                    <ul class="people">
-                        <li class="horizontalBlock2">Świadek: Jacek Kamiński<br />
-                            +48600302730</li>
-                        <li class="horizontalBlock2">Rafał<br />
-                            +17788557232 (Kanada)<br />
-                            +48605623289 (Polska)</li>
-                    </ul>
-                </li>
-            </ul>
-<div style="clear: both">
-                </div>
         </div>
     </div>
     <!-- /container -->
