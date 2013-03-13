@@ -18,7 +18,7 @@
             padding-top: 20px;
             padding-bottom: 60px;
             background: #fff url('img/bg.png');
-            font-family: Andada;
+            font-family: Andada, Verdana, Sans-Serif;
         }
         
         /* Custom container */
@@ -48,7 +48,7 @@
         }
         .jumbotron h1
         {
-            font-size: 75px;
+            font-size: 60px;
             line-height: 1;
             margin-bottom: 40px;
         }
@@ -90,23 +90,23 @@
             display: table-cell;
             width: 1%;
             float: none;
+            border-radius: 3px;
         }
         .navbar .nav li a
         {
             font-weight: bold;
             text-align: center;
-            border-left: 1px solid rgba(255,255,255,.75);
-            border-right: 1px solid rgba(0,0,0,.1);
+            /*border-left: 1px solid rgba(255,255,255,.75);
+            border-right: 1px solid rgba(0,0,0,.1);*/
+            border-radius: 3px ;
         }
         .navbar .nav li:first-child a
         {
-            border-left: 0;
-            border-radius: 3px 0 0 3px;
+            border-radius: 0 3px 3px 0 ;
         }
         .navbar .nav li:last-child a
         {
-            border-right: 0;
-            border-radius: 0 3px 3px 0;
+            border-radius: 3px 0 0 3px ;
         }
         
         /* Styles for sections */
@@ -155,9 +155,20 @@
         {
             width: 100%;
             height: 100%;
-            margin-top: 80px;
+            margin-top: 100px;
             padding: 20px 0 20px 0;
             background: url('img/jumbotron-corner.png') no-repeat 10px 10px;
+        }
+        
+        #iir 
+        {
+        	padding: 20px 0 20px 0;
+        	font-size: 40px;
+        	text-align: center;
+        	font-weight: bold;
+        	font-family: Petit Formal Script, Verdana, Serif;
+        	color: #555555;
+        	text-shadow: 0 1px 0 #ffffff;
         }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -172,7 +183,7 @@
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="ico/favicon.png">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
+<body data-spy="scroll" data-target=".navbar" data-offset="120">
     <div class="container">
         <div class="masthead">
             <div class="navbar navbar-fixed-top">
@@ -185,6 +196,8 @@
                             <li><a href="#Kontakt">Kontakt</a></li>
                         </ul>
                     </div>
+                    <div id="iir">
+                        Ilona i Rafał</div>
                 </div>
             </div>
             <!-- /.navbar -->
@@ -197,11 +210,17 @@
                 <p>
                     Zapraszamy na nasz ślub!</p>
                 <p>
-                    Czas: 18 maja 2013 godz. 17.00</p>
+                    Czas:
+                    <br />
+                    18 maja 2013 godz. 17.00</p>
                 <p>
                     Miejsce:
                 </p>
                 <p>
+                    <img src="img/content/kosciol.jpg" width="400px" />
+                </p>
+                <p>
+                    <br />
                     Rzymskokatolicka Parafia p.w. Najczystszego Serca Maryi
                     <br />
                     ul. Chłopickiego 2<br />
@@ -216,30 +235,28 @@
                 <h1>
                     Wesele</h1>
                 <p>
-                    Po uroczystości ślubnej zapraszamy najbliższą rodzinę i przyjaciół na przyjęcie
+                    Po uroczystości ślubnej najbliższą rodzinę i przyjaciół zapraszamy na przyjęcie
                     weselne, które odbędzie się w restauracji Róża Wiatrów przy ul. Wał Miedzeszyński
                     377.
                 </p>
-                <div>
-                    <ul>
-                        <li class="horizontalBlock3"><a href="http://www.rozawiatrow-restauracja.pl/" target="_blank">
-                            <img src="img/content/restauracja.png" style="height: 200px;" /><br />
-                            Restauracja</a> </li>
-                        <!--<li class="horizontalBlock3">
+                <ul>
+                    <li class="horizontalBlock3"><a href="http://www.rozawiatrow-restauracja.pl/" target="_blank">
+                        <img src="img/content/restauracja.png" style="height: 200px;" /><br />
+                        Restauracja</a> </li>
+                    <!--<li class="horizontalBlock3">
                             <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0"
                                 marginwidth="0" src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;aq=&amp;sll=52.226906,21.086197&amp;sspn=0.032333,0.07184&amp;t=h&amp;ie=UTF8&amp;hq=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;hnear=&amp;ll=52.223593,21.066971&amp;spn=0.021031,0.051498&amp;z=13&amp;iwloc=A&amp;output=embed">
                             </iframe>
                             <br />
                             <small><a href="https://maps.google.pl/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;aq=&amp;sll=52.226906,21.086197&amp;sspn=0.032333,0.07184&amp;t=h&amp;ie=UTF8&amp;hq=r%C3%B3%C5%BCa+wiatr%C3%B3w&amp;hnear=&amp;ll=52.223593,21.066971&amp;spn=0.021031,0.051498&amp;z=13&amp;iwloc=A"
                                 style="color: #0000FF; text-align: left">Miejsce</a></small> </li>-->
-                        <li class="horizontalBlock3"><a href="img/content/parking_full.jpg" target="_blank">
-                            <img src="img/content/parking.jpg" style="height: 200px;" /><br />
-                            Parking</a> </li>
-                    </ul>
-                    <div style="clear: both">
-                    </div>
+                    <li class="horizontalBlock3"><a href="img/content/parking_full.jpg" target="_blank">
+                        <img src="img/content/parking.jpg" style="height: 200px;" /><br />
+                        Parking</a> </li>
+                </ul>
+                <div style="clear: both">
                 </div>
-                <p>
+                <p style="margin-top: 10px;">
                     Drodzy Goście, jeśli potrzebujecie transportu z kościoła do restauracji prosimy
                     o informację – coś dla Was zorganizujemy.
                 </p>
@@ -291,7 +308,6 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- /container -->
     <!-- Le javascript ==================================================
     -->
@@ -299,13 +315,17 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () { // Click event for any anchor tag that's href starts
-    with # $('.navbar a[href^="#"]').click(function (event) { // The id of the section
-    we want to go to. var id = $(this).attr("href"); // An offset to push the content
-    down from the top. var offset = 60; // Our scroll target : the top position of the
-    // section that has the id referenced by our href. var target = $(id).offset().top
-    - offset; // The magic...smooth scrollin' goodness. $('html, body').animate({ scrollTop:
-    target }, 500); //prevent the page from jumping down to our section. event.preventDefault();
-    }); }); </script>
+        $(document).ready(function () { // Click event for any anchor tag that's href starts    with# 
+            $('.navbar a[href^="#"]').click(function (event) { // The id of the section        we want to go to.
+                var id = $(this).attr("href"); // An offset to push the content        down from the top.
+                var offset = 120; // Our scroll target : the top position of the
+                // section that has the id referenced by our href. 
+                var target = $(id).offset().top - offset; // The magic...smooth scrollin' goodness. 
+                $('html, body').animate({
+                    scrollTop: target
+                }, 500); //prevent the page from jumping down to our section. 
+                event.preventDefault();
+            });
+        });</script>
 </body>
 </html>
