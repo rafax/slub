@@ -177,6 +177,16 @@
             text-shadow: 0 1px 0 #ffffff;
             background: url('img/bg.png');
         }
+        
+        .imgCol
+        {
+            float: left;
+        }
+        
+        .imgCol img
+        {
+            display: block;
+        }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -251,21 +261,27 @@
             </div>
         </div>
         <div class="jumbotron photos" id="s1">
-            <a class="fancybox" href="img/content/s1/1.jpg" rel="s1">
-                <img src="img/content/s1/1_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s1/2.jpg" rel="s1">
-                <img src="img/content/s1/2_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s1/3.jpg" rel="s1">
-                <img src="img/content/s1/3_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s1/4.jpg" rel="s1">
-                <img src="img/content/s1/4_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s1/5.jpg" rel="s1">
-                <img src="img/content/s1/5_s.jpg" />
-            </a>
+            <div class="imgCol">
+                <a class="fancybox" href="img/content/s1/1.jpg" rel="s1">
+                    <img src="img/content/s1/1_s.jpg" />
+                </a>
+                <a class="fancybox" href="img/content/s1/2.jpg" rel="s1">
+                    <img src="img/content/s1/2_s.jpg" />
+                </a>
+            </div>
+            <div class="imgCol">
+                <a class="fancybox" href="img/content/s1/3.jpg" rel="s1">
+                    <img src="img/content/s1/3_s.jpg" />
+                </a>
+            </div>
+            <div class="imgCol">
+                <a class="fancybox" href="img/content/s1/4.jpg" rel="s1">
+                    <img src="img/content/s1/4_s.jpg" />
+                </a>
+                <a class="fancybox" href="img/content/s1/5.jpg" rel="s1">
+                    <img src="img/content/s1/5_s.jpg" />
+                </a>
+            </div>
         </div>
         <div class="jumbotron" id="Wesele">
             <div class="jumbotronContent">
@@ -297,21 +313,27 @@
             </div>
         </div>
         <div class="jumbotron photos" id="s2">
-            <a class="fancybox" href="img/content/s2/1.jpg" rel="s2">
-                <img src="img/content/s2/1_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s2/2.jpg" rel="s2">
-                <img src="img/content/s2/2_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s2/3.jpg" rel="s2">
-                <img src="img/content/s2/3_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s2/4.jpg" rel="s2">
-                <img src="img/content/s2/4_s.jpg" />
-            </a>
-            <a class="fancybox" href="img/content/s2/5.jpg" rel="s2">
-                <img src="img/content/s2/5_s.jpg" />
-            </a>
+            <div class="imgCol">
+                <a class="fancybox" href="img/content/s2/1.jpg" rel="s2">
+                    <img src="img/content/s2/1_s.jpg" />
+                </a>
+                <a class="fancybox" href="img/content/s2/2.jpg" rel="s2">
+                    <img src="img/content/s2/2_s.jpg" />
+                </a>
+            </div>
+            <div class="imgCol">
+                <a class="fancybox" href="img/content/s2/3.jpg" rel="s2">
+                    <img src="img/content/s2/3_s.jpg" />
+                </a>
+            </div>
+            <div class="imgCol">
+                <a class="fancybox" href="img/content/s2/4.jpg" rel="s2">
+                    <img src="img/content/s2/4_s.jpg" />
+                </a>
+                <a class="fancybox" href="img/content/s2/5.jpg" rel="s2">
+                    <img src="img/content/s2/5_s.jpg" />
+                </a>
+            </div>
         </div>
         <div class="jumbotron" id="Prezenty">
             <div class="jumbotronContent">
@@ -367,7 +389,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/fancybox/jquery.fancybox.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.4"
+        media="screen" />
     <script type="text/javascript">
         $(document).ready(function () { // Click event for any anchor tag that's href starts    with# 
             $('.fancybox').fancybox({
@@ -397,8 +420,9 @@
 
             });
 
-            
 
-        });</script>
+
+        });
+    </script>
 </body>
 </html>
