@@ -231,12 +231,8 @@
                         </ul>
                     </div>
                     <div id="iir">
-                        <div style=" font-family: 'Arizonia', cursive; font-weight:normal">Ilona i Rafał</div>
-<div style=" font-family: 'Arizonia', cursive; font-weight:bold">Ilona i Rafał</div>
-<div style=" font-family: 'Emilys Candy', cursive; font-weight:normal">Ilona i Rafał</div>
-<div style=" font-family: 'Emilys Candy', cursive; font-weight:bold">Ilona i Rafał</div>
-<div style=" font-family: 'Poiret One', cursive; font-weight:normal">Ilona i Rafał</div>
-<div style=" font-family: 'Poiret One', cursive; font-weight:bold">Ilona i Rafał</div>
+<div style=" font-family: 'Emilys Candy', cursive; font-weight:normal" id="A" data-next="#B">Ilona i Rafał</div>
+<div style=" font-family: 'Poiret One', cursive; font-weight:normal; display: none;" id="B" data-next="#A">Ilona i Rafał</div>
                     </div>
                 </div>
             </div>
@@ -438,6 +434,9 @@
                 event.preventDefault();
 
             });
+            $('#iir div').click(function(){
+    $(this).hide(); $($(this).attr('data-next')).show();
+});
 
 
 
