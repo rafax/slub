@@ -203,6 +203,28 @@
         {
             display: block;
         }
+        
+         @media screen and (max-width: 480px) { 
+        
+            .horizontalBlock2 
+            {
+                width:100%;
+                float: none;
+                text-align: center;
+            }
+            
+             .imgCol 
+             {
+                width:100%;
+                float: none;
+                text-align: center;
+             }
+             
+              .imgCol img
+             {
+                display: inline;
+             }
+        }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -330,7 +352,7 @@
             </div>
         </div>
         <div class="jumbotron photos" id="s2">
-            <div class="imgCol" style="width: 390px">
+            <div class="imgCol">
                 <a class="fancybox" href="img/content/s2/1.jpg" rel="s2">
                     <img src="img/content/s2/1_s.jpg" />
                 </a>
@@ -338,12 +360,12 @@
                     <img src="img/content/s2/2_s.jpg" />
                 </a>
             </div>
-            <div class="imgCol" style="width: 350px">
+            <div class="imgCol">
                 <a class="fancybox" href="img/content/s2/3.jpg" rel="s2">
                     <img src="img/content/s2/3_s.jpg" />
                 </a>
             </div>
-            <div class="imgCol" style="width: 260px">
+            <div class="imgCol">
                 <a class="fancybox" href="img/content/s2/4.jpg" rel="s2">
                     <img src="img/content/s2/4_s.jpg" />
                 </a>
@@ -376,29 +398,29 @@
             <div class="jumbotronContent">
                 <h1>
                     Kontakt</h1>
-                <ul>
-                    <li class="horizontalBlock2">
+                 <div>
+                    <div class="horizontalBlock2">
                         <img src="img/content/kingailona.jpg" class="doublePhoto" /><br />
-                        <ul class="people">
-                            <li class="horizontalBlock2">Świadkowa: Kinga Kołodziejczak
+                        <div class="people">
+                            <div class="horizontalBlock2">Świadkowa: Kinga Kołodziejczak
                                 <br />
-                                +48501653690 </li>
-                            <li class="horizontalBlock2">Ilona
+                                +48501653690 </div>
+                            <div class="horizontalBlock2">Ilona
                                 <br />
-                                +48607560999</li>
-                        </ul>
-                    </li>
-                    <li class="horizontalBlock2">
+                                +48607560999</div>
+                        </div>
+                    </div>
+                    <div class="horizontalBlock2">
                         <img src="img/content/jacekrafal.jpg" class="doublePhoto" /><br />
-                        <ul class="people">
-                            <li class="horizontalBlock2">Świadek: Jacek Kamiński<br />
-                                +48600302730</li>
-                            <li class="horizontalBlock2">Rafał<br />
+                        <div class="people">
+                            <div class="horizontalBlock2">Świadek: Jacek Kamiński<br />
+                                +48600302730</div>
+                            <div class="horizontalBlock2">Rafał<br />
                                 +17788557232 (Kanada)<br />
-                                +48605623289 (Polska)</li>
+                                +48605623289 (Polska)</div>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 <div style="clear: both">
                 </div>
             </div>
